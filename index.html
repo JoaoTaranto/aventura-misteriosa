@@ -3,71 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Aventura Misteriosa</title>
 </head>
 <body>
     <main class="adventure-container">
         <div id="passo--1" class="passo ativo inicio-aventura">
             <h1>Que tal iniciar uma incrível aventura? Está preparado?</h1>
-            <button id="iniciar-aventura" data-proximo="0" type="button">Iniciar Aventura</button>
+            <button id="iniciar-aventura" class="btn-proximo" data-proximo="0" type="button">Iniciar Aventura</button>
         </div>
         
         <div class="passo" id="passo-0">
-            <img src="" alt="">
+            <img src="assets/Mysterious Cave.webp" alt="Caverna Misteriosa">
             <p>Você é um aventureiro destemido que ouviu rumores sobre um tesouro escondido em uma caverna misteriosa. Dizem que a caverna é guardada por um dragão antigo. No caminho para a caverna, você se depara com duas entradas.</p>
             <button class="btn-proximo" data-proximo="1">Entrar pela esquerda, que parece ser mais seguro e menos ameaçador.</button>
             <button class="btn-proximo" data-proximo="2">Entrar pela direita, que é mais escura, mas parece promissora.</button>
         </div>
         <div class="passo" id="passo-1">
-            <img src="" alt="">
+            <img src="assets/caverna-piso-falso.webp" alt="Caverna com pisos falsos">
             <p>Ao entrar na caverna, você começa a explorar e, de repente, pisa em um piso falso. Você sente o chão ceder sob seus pés, e tenta agarrar uma raiz próxima para se salvar da queda.</br>Depois de evitar a armadilha, você se encontra em um túnel escuro. A luz do dia está longe e a única opção é seguir em frente.</p>
             <button class="btn-proximo" data-proximo="3">Acender uma tocha para iluminar o caminho.</button>
             <button class="btn-proximo" data-proximo="3">Continuar no escuro, guiando-se pelo toque nas paredes.</button>
         </div>
         <div class="passo" id="passo-2">
-            <img src="" alt="">
+            <img src="assets/caverna-piso-falso.webp" alt="Caverna com pisos falsos">
             <p>Ao entrar na caverna, você começa a explorar e, de repente, pisa em um piso falso. Você sente o chão ceder sob seus pés, e se joga para o lado em um impulso desesperado.</br>Depois de evitar a armadilha, você se encontra em um túnel escuro. A luz do dia está longe e a única opção é seguir em frente.</p>
             <button class="btn-proximo" data-proximo="3">Acender uma tocha para iluminar o caminho.</button>
             <button class="btn-proximo" data-proximo="3">Continuar no escuro, guiando-se pelo toque nas paredes.</button>
         </div>
         <div class="passo" id="passo-3">
-            <img src="" alt="">
+            <img src="assets/porta-antiga.webp" alt="Porta de pedra com inscrições antigas.">
             <p>Você chega a uma porta de pedra com inscrições antigas. Parece que você precisa resolver um enigma para abri-la.</p>
             <button class="btn-proximo" data-proximo="4">Tentar decifrar o enigma usando seu conhecimento sobre runas antigas.</button>
             <button class="btn-proximo" data-proximo="4">Empurrar a porta com força, acreditando que conseguirá abri-la sem resolver o enigma.</button>
         </div>
         <div class="passo" id="passo-4">
-            <img src="" alt="">
+            <img src="assets/dragão-adormecido.png" alt="Dragão dormindo dentro da câmara gigante.">
             <p>Após passar pela porta, você entra em uma câmara gigante. Lá, encontra o dragão adormecido, com o tesouro aos seus pés.</p>
             <button class="btn-proximo" data-proximo="5">Tentar pegar o tesouro sem acordar o dragão.</button>
             <button class="btn-proximo" data-proximo="5">Se aproximar cuidadosamente, preparando-se para lutar se necessário.</button>
         </div>
         <div class="passo" id="passo-5">
-            <img src="" alt="">
+            <img src="assets/dragão-adormecido.png" alt="Dragão dormindo dentro da câmara gigante.">
             <p>Quando você se aproxima do tesouro, percebe que ele está protegido por uma barreira mágica. No centro, há uma chave.</p>
             <button class="btn-proximo" data-proximo="6">Você pega a chave e tenta usá-la na barreira.</button>
             <button class="btn-proximo" data-proximo="7">Você decide investigar a câmara em busca de uma pista sobre como desativar a barreira.</button>
         </div>
         <div class="passo" id="passo-6">
-            <img src="" alt="">
+            <img src="assets/dragão-acordando.png" alt="Dragão acordando após barulho de barreira se desabando.">
             <p>Você consegue pegar a chave, ativando-a e usando na barreira, fazendo com que ela quebrasse. Entretanto, o barulho da barreira se destruindo despertou o dragão.</p>
             <button class="btn-proximo" data-proximo="8">Tentar controlar o dragão utilizando a chave como auxílio.</button>
             <button class="btn-proximo" data-proximo="9">Tentar ir com toda força e fé para cima do dragão, para tentar eliminá-lo.</button>
         </div>
         <div class="passo" id="passo-7">
-            <img src="" alt="">
+            <img src="assets/dragão-acordando.png" alt="Dragão acordando após barulho de barreira se desabando.">
             <p>Você investigou a câmara, encontrou um guia de como destruir a barreira utilizando a chave, e tem êxito no processo. Entretanto, o barulho da barreira se destruindo despertou o dragão.</p>
             <button class="btn-proximo" data-proximo="8">Tentar controlar o dragão utilizando a chave como auxílio.</button>
             <button class="btn-proximo" data-proximo="9">Tentar ir com toda força e fé para cima do dragão, para tentar eliminá-lo.</button>
         </div>
         <div class="passo" id="passo-8">
-            <img src="" alt="">
+            <img src="assets/dragão-domado.webp" alt="Dragão domado e submetido com êxito.">
             <p>Você aponta a chave para o dragão e, surpreendentemente, ele se submete à sua vontade. O dragão agora é seu aliado, e o tesouro é seu! Com um sorriso, você monta no dragão e voa para fora da caverna, vitorioso. Parabéns, você teve sucesso nessa aventura misteriosa!</p>
         </div>
         <div class="passo" id="passo-9">
-            <img src="" alt="">
+            <img src="assets/aventureiro-ferido.webp" alt="Aventureiro fugindo depois de tentar lutar contra o dragão.">
             <p>Você entrou em combate com o dragão, e infelizmente não obteve sucesso na conquista do tesouro encontrado e acabou se ferindo muito, precisando fugir!</p>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
